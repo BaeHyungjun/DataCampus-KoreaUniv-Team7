@@ -1,4 +1,4 @@
-# data-campus-koreauniv-7
+# DataCampus-KoreaUniv-Team7
 데이터청년캠퍼스 고려대학교 7조
 
 ### 구성원
