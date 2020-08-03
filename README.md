@@ -5,6 +5,8 @@ by. 데이터청년캠퍼스 고려대학교 7조
 - 강성권(SungKweon)
 - 배형준(BaeHyungjun)
 
+data link : https://drive.google.com/drive/u/0/folders/1EXBU7Cwbb7DhtwldgVqwRTT6IYf9k_Mu
+
 ## 프로젝트 설명
 `Naver 뉴스, Daum 뉴스`의 게시일자, 제목, 기사본문, 요약문을 크롤링 및 학습하여 `YouTube 뉴스 컨텐츠`를 자동으로 요약하는 서비스를 구현합니다.
 
