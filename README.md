@@ -26,7 +26,18 @@ YouTube는 사용시간이 꾸준히 증가하고 있는 플랫폼이며, 현재
 |활용방안|Training / Validation|Training / Validation|Test|
 |기타|최근 약 2년간의 날짜별, 카테고리별 상위 랭킹 뉴스|최근 약 3년간의 날짜별, 카테고리별 상위 랭킹 뉴스|YTN, JTBC, SBS, KBS, MBC, 경향신문, 중앙일보, 한겨례 등 공식뉴스채널|  
 
-data link : https://drive.google.com/drive/u/0/folders/1EXBU7Cwbb7DhtwldgVqwRTT6IYf9k_Mu
+## DB 설명  
+data link : https://drive.google.com/drive/u/0/folders/1EXBU7Cwbb7DhtwldgVqwRTT6IYf9k_Mu  
+- `news_raw.db`: 크롤링 한 직후의 raw data이며, navernews, daumnews 테이블로 구성되어 있습니다.
+- `news_for_EDA` (예정): 정수 인코딩 적용하기 직전까지 전처리한 db입니다. 이 데이터를 기반으로 EDA를 진행합니다.
+
+## EDA 방안
+- 월별 groupby해서 워드클라우드
+- 카테고리별 기사 길이
+- Summary에서 나온 token들이 본문에서는 어디에 분포하는지 시각화
+- Zipf's law: 불용어 처리를 위해 단어 빈도수 barplot (정렬)
+- Heap's law 증명: 문서 수에 따라 그래프로 시각화하고 공식과 일치하는지 확인
+- Summary와 본문의 단어 비교: 본문에 나왔던 어떤 단어가 summary에서 사라지는지 확인, 전처리에 적용
 
 
 ## 분석 FLOW
