@@ -3,3 +3,11 @@ crawling/.ipynb_checkpoints/naver_crawling-checkpoint.ipynb
 preprocessing/hs_err_pid5756.log
 Modeling/.ipynb_checkpoints/seq2seq_attention-checkpoint.ipynb
 preprocessing/.ipynb_checkpoints/how_to_use_kobert-checkpoint.ipynb
+data/news_raw.db
+data/news_normalized.pickle
+data/news_cleaned.db
+data/ast_literal_eval_body/body_morphs_list_0.pkl
+data/ast_literal_eval_body/body_morphs_list_1.pkl
+data/ast_literal_eval_body/body_morphs_list_2.pkl
+data/ast_literal_eval_body/body_morphs_list_3.pkl
+data/news_tokenized.csv
