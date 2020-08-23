@@ -12,3 +12,6 @@ data/ast_literal_eval_body/body_morphs_list_2.pkl
 data/ast_literal_eval_body/body_morphs_list_3.pkl
 data/news_tokenized.csv
 data/news_normalized.csv
+data/news_normalized_2.pickle
+data/news_stemmed.pickle
+data/stemming.pickle
