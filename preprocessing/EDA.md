@@ -47,6 +47,18 @@ c.most_common(20)
   
 가장 많이 등장한 70개의 단어를 뽑아보았을 때, 그림과 같이 앞의 64개 단어들(~, 그)은 분석에서 중요하지 않은 불용어라고 판단하여 분석에서 제외하였습니다.  
 
+## 연도별 WordCloud  
+
+![image](https://user-images.githubusercontent.com/58713684/90980380-f1edc200-e595-11ea-9188-059fa61e7442.png)  
+
+![image](https://user-images.githubusercontent.com/58713684/90980394-016d0b00-e596-11ea-9d4f-f52bea58e9f8.png)
+  
+![image](https://user-images.githubusercontent.com/58713684/90980403-0f229080-e596-11ea-9073-20940df34be1.png)
+  
+![image](https://user-images.githubusercontent.com/58713684/90980406-1c3f7f80-e596-11ea-9bb6-65d639d3f0e9.png)
+  
+- 2017 ~ 2019년에 비해 2020년에는 코로나19와 관련된 단어들이 많이 등장하게 되었음을 확인할 수 있습니다.  
+
 
 
 
