@@ -15,3 +15,8 @@ data/news_normalized.csv
 data/news_normalized_2.pickle
 data/news_stemmed.pickle
 data/stemming.pickle
+preprocessing/youtube_pipeline/.ipynb_checkpoints/cleaning-checkpoint.ipynb
+preprocessing/youtube_pipeline/.ipynb_checkpoints/main_0-checkpoint.ipynb
+preprocessing/youtube_pipeline/.ipynb_checkpoints/main_1-checkpoint.ipynb
+data/news_normalized_final.pickle
+data/news_nouns.pickle
