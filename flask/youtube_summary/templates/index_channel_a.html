@@ -13,14 +13,10 @@
 </head>
 <body>
 <div class="container">
-    {% include 'navbar.html' %}
-    <div class="jumbotron">
-        <h1 class="display-4">안녕하세요, YouTube Summary 입니다.</h1>
-        <p class="lead">타임푸어족인 당신을 위한, YouTube 뉴스 요약 서비스!!!</p>
-        <hr class="my-4">
-        <p>서비스에 대해 더 알아보고 싶으시다면, 아래 버튼을 클릭해주세요.</p>
-        <a class="btn btn-secondary btn-lg" href="/about" role="button">About Us</a>
-    </div>
+    {% include 'navbar4.html' %}
+
+    <img src="/static/images/channel_a_banner.png" style="width: 100%; height: auto;">
+    <hr class="my-4">
 {#    col은 기본적으로 12을 기준으로 해서 4면 4개 하는 것처럼 등분#}
     <div class="row row-cols-1">
         {% for r in rows %}
@@ -74,6 +70,27 @@
                                         </div>
                                     </div>
                                 </div>
+{#                                <div class="accordion" id="accordionExample">#}
+{#                                    <div class="card">#}
+{#                                        <div class="card-header" id="headingTwo">#}
+{#                                            <h4 class="mb-0">#}
+{#                                                <p style="padding: .375rem .75rem; font-size: 1rem; margin-bottom:0;">{{r['comment_sentiment']}}</p>#}
+{#                                                <button class="btn btn-link btn-block text-left collapsed" type="button"#}
+{#                                                        data-toggle="collapse"#}
+{#                                                        data-target="#collapseTwo" aria-expanded="false"#}
+{#                                                        aria-controls="collapseTwo">#}
+{#                                                    이 영상의 댓글 반응이 궁금하다면?#}
+{#                                                </button>#}
+{#                                            </h4>#}
+{#                                        </div>#}
+{#                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"#}
+{#                                             data-parent="#accordionExample">#}
+{#                                            <div class="card-body">#}
+{#                                                댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다.#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
                             </div>
                         </div>
                     </div>
