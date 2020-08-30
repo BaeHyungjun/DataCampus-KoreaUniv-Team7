@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>YouTube Summary</title>
+</head>
+<body>
+<div class="container">
+    {% include 'navbar4.html' %}
+
+    <img src="/static/images/yhnews_banner.png" style="width: 100%; height: auto;">
+    <hr class="my-4">
+{#    col은 기본적으로 12을 기준으로 해서 4면 4개 하는 것처럼 등분#}
+    <div class="row row-cols-1">
+        {% for r in rows %}
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href={{r['link']}}><img src={{r['thumbnail']}} class="card-img"></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href={{r['link']}}><h5 class="card-title">{{r['title']}}</h5></a>
+                                <p class="card-text"><small class="text-muted">
+                                    {{r['keywords']}}<br></small></p>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h4 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                        data-toggle="collapse"
+                                                        data-target="#collapseOne" aria-expanded="false"
+                                                        aria-controls="collapseOne">
+                                                    이 영상의 요약문을 보고싶다면?
+                                                </button>
+                                            </h4>
+                                            <h4 class="mb-0">
+                                                <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                        data-toggle="collapse"
+                                                        data-target="#collapseTwo" aria-expanded="false"
+                                                        aria-controls="collapseTwo">
+                                                    이 영상의 댓글 반응이 궁금하다면?
+                                                    {% if r['comment_sentiment'].startswith('부정') %}
+                                                        <span class="badge badge-pill badge-secondary">{{r['comment_sentiment']}}</span>
+                                                    {% else %}
+                                                        <span class="badge badge-pill badge-success">{{r['comment_sentiment']}}</span>
+                                                    {% endif %}
+                                                </button>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                요약된 내용이 들어가는 자리입니다. 예시) 사랑제일교회 관련 193명 확진 서울 확진자만 145명 서울시, 4,066명에 검사 이행명령 검사, 자가격리 당부 서울시, 전광훈 목사, 사랑제일교회 관계자 고발 방침 성북구 사랑제일교회를 중심으로 서울 확진자가 폭증하면서 신자들을 대상으로 검사를 독려하고 있습니다. 서울 확진자가 폭증하면서 병상 확보도 문제입니다. 사랑교회 관련 서울 확진자는 모두 145명으로 늘었는데, 지금까지 검사받은 교인과 방문자는 771명에 그치고 있습니다. 서울시는 검사 대상자 4천66명에게 검사 이행명령을 내리고, 이 가운데 약 3천397명의 소재를 확인했습니다. 어젯밤 10시를 기준으로 서울에서는 755병상 가운데 389병상을 사용하고 있습니다.
+                                            </div>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                             data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+{#                                <div class="accordion" id="accordionExample">#}
+{#                                    <div class="card">#}
+{#                                        <div class="card-header" id="headingTwo">#}
+{#                                            <h4 class="mb-0">#}
+{#                                                <p style="padding: .375rem .75rem; font-size: 1rem; margin-bottom:0;">{{r['comment_sentiment']}}</p>#}
+{#                                                <button class="btn btn-link btn-block text-left collapsed" type="button"#}
+{#                                                        data-toggle="collapse"#}
+{#                                                        data-target="#collapseTwo" aria-expanded="false"#}
+{#                                                        aria-controls="collapseTwo">#}
+{#                                                    이 영상의 댓글 반응이 궁금하다면?#}
+{#                                                </button>#}
+{#                                            </h4>#}
+{#                                        </div>#}
+{#                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"#}
+{#                                             data-parent="#accordionExample">#}
+{#                                            <div class="card-body">#}
+{#                                                댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다.#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>
