@@ -1,4 +1,6 @@
-## Sentiment Analysis PyTorch implementations
+## Comment Sentiment Analysis
+#### https://github.com/Huffon/pytorch-sentiment-analysis-kor 자료 사용
+
 This repo contains various sequential models used to **classify sentiment of sentence.**
 
 Base codes are based on this great [**sentiment-analysis tutorial**](https://github.com/bentrevett/pytorch-sentiment-analysis).
