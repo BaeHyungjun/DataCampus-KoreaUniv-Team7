@@ -20,3 +20,11 @@ preprocessing/youtube_pipeline/.ipynb_checkpoints/main_0-checkpoint.ipynb
 preprocessing/youtube_pipeline/.ipynb_checkpoints/main_1-checkpoint.ipynb
 data/news_normalized_final.pickle
 data/news_nouns.pickle
+flask/youtube_summary/main.py
+flask/youtube_summary/.idea/.gitignore
+flask/youtube_summary/.idea/misc.xml
+flask/youtube_summary/.idea/modules.xml
+flask/youtube_summary/.idea/vcs.xml
+flask/youtube_summary/.idea/youtube_summary.iml
+flask/youtube_summary/.idea/inspectionProfiles/profiles_settings.xml
+2. Preprocessing/08_youtube_pipeline/.ipynb_checkpoints/02_main-checkpoint.ipynb
