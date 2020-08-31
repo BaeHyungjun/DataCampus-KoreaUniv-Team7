@@ -15,7 +15,7 @@
 <div class="container">
     {% include 'navbar.html' %}
     <div class="jumbotron">
-        <h1 class="display-4">안녕하세요, YouTube Summary 입니다.</h1>
+        <h1 style="3rem;font-weight: 300;line-height: 1.2;">안녕하세요,<br> YouTube Summary<br> 입니다.</h1>
         <p class="lead">타임푸어족인 당신을 위한, YouTube 뉴스 요약 서비스!!!</p>
         <hr class="my-4">
         <p>서비스에 대해 더 알아보고 싶으시다면, 아래 버튼을 클릭해주세요.</p>
@@ -63,13 +63,13 @@
                                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                              data-parent="#accordionExample">
                                             <div class="card-body">
-                                                요약된 내용이 들어가는 자리입니다. 예시) 사랑제일교회 관련 193명 확진 서울 확진자만 145명 서울시, 4,066명에 검사 이행명령 검사, 자가격리 당부 서울시, 전광훈 목사, 사랑제일교회 관계자 고발 방침 성북구 사랑제일교회를 중심으로 서울 확진자가 폭증하면서 신자들을 대상으로 검사를 독려하고 있습니다. 서울 확진자가 폭증하면서 병상 확보도 문제입니다. 사랑교회 관련 서울 확진자는 모두 145명으로 늘었는데, 지금까지 검사받은 교인과 방문자는 771명에 그치고 있습니다. 서울시는 검사 대상자 4천66명에게 검사 이행명령을 내리고, 이 가운데 약 3천397명의 소재를 확인했습니다. 어젯밤 10시를 기준으로 서울에서는 755병상 가운데 389병상을 사용하고 있습니다.
+                                                {{r['summary']}}
                                             </div>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                              data-parent="#accordionExample">
                                             <div class="card-body">
-                                                댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다. 댓글 요약이나 댓글 분석한 내용이 들어가는 자리입니다.
+                                                {{r['comment_summary']}}
                                             </div>
                                         </div>
                                     </div>
