@@ -17,8 +17,10 @@ by. 데이터청년캠퍼스 고려대학교 7조
 > **전체 과정 정리** : 위의 1 ~ 5 항목에 존재하는 소스코드 중 실제 최종 결과물에 반영된 소스코드만을 작업순서에 따라 재배열한 폴더입니다. 즉, 내용은 1 ~ 5 항목에 나타난 것과 같으니 전체 진행과정을 확인하기 위한 참고용으로 사용하시기 바랍니다.  
 
 ## 데이터 & 학습모델  
-- 데이터 link : https://drive.google.com/drive/u/0/folders/10IFZEeVduhyJR4LZlH9iHobNBvRHfyAg
-- 학습모델 link : https://drive.google.com/drive/u/0/folders/1YC38uwdjvp77PNPvw12OkeSMBITJPW__
+구글 드라이브 link: https://drive.google.com/drive/u/0/folders/1EXBU7Cwbb7DhtwldgVqwRTT6IYf9k_Mu  
+
+- [데이터](https://drive.google.com/drive/u/0/folders/10IFZEeVduhyJR4LZlH9iHobNBvRHfyAg)
+- [학습모델](https://drive.google.com/drive/u/0/folders/1YC38uwdjvp77PNPvw12OkeSMBITJPW__)
 
 ## 배경 및 필요성  
 최근 TV보다는 스마트폰으로, 그리고 그 중에서도 SNS를 통해 뉴스를 소비하는 비율이 점점 높아지고 있습니다. 한국언론진흥재단에서 조사한 바에 따르면, 2019년 1월 기준 주요 22개 언론사의 SNS 구독자 수 총합은 약 1600만 명이라고 합니다. 페이스북, 트위터, 인스타그램, 유튜브, 네이버, 다음 등 뉴스를 제공하는 플랫폼은 다양하지만 저희 팀은 그 중에서 유튜브를 주목하였습니다.  
